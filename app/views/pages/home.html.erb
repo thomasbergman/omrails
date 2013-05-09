@@ -1,6 +1,9 @@
+<% if user_signed_in? %>
+Signed in
+<% end %>
 <div class="hero-unit">
-<h1>Welcome to Single Serving Sites dot net</h1>
+<h1>Welcome to SingleServingSites.net</h1>
 <p>
-	<%= link_to "Single Serving Sites", "http://singleservingsites.net", class: "btn btn-large" %>
+	<%= link_to "Single Serving Sites", new_user_registration_path, class: "btn btn-large" %>
 </p>
 </div>
